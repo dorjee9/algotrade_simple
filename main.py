@@ -1,17 +1,19 @@
-import yfinance as yf
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
+import yfinance as yf         # To download historical stock data
+import pandas as pd           # For handling tables (dataframes)
+import numpy as np            # For math operations like floor or arrays
+import matplotlib.pyplot as plt  # To plot charts
+
 
 # PARAMETERS
-symbol = "AAPL"
-start = "2022-01-01"
-end = "2024-12-31"
-fast_window = 20
-slow_window = 50
-initial_cash = 100000
-fee_per_trade = 1.0
-slippage_pct = 0.0005
+symbol = "AAPL"       # Stock ticker
+start = "2022-01-01"  # Start date for historical data
+end = "2024-12-31"    # End date
+fast_window = 20      # Fast moving average period
+slow_window = 50      # Slow moving average period
+initial_cash = 100000 # Starting money
+fee_per_trade = 1.0   # Flat trading fee
+slippage_pct = 0.0005 # Extra cost due to price changes while trading
+
 
 # 1. DOWNLOAD DATA (avoid FutureWarning)
 df = yf.download(symbol, start=start, end=end, progress=False, auto_adjust=False)
