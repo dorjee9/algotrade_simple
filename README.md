@@ -8,5 +8,9 @@ This project requires a few Python libraries. You can install them using `pip`.
 
 ```bash
 python --version
-## ** Install the required packages**
+
+## **Install the required packages**
 pip install yfinance pandas numpy matplotlib
+## **Run the main Python script**
+python main.py
+
