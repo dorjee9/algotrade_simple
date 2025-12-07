@@ -2,18 +2,19 @@
 
 This project requires a few Python libraries. You can install them using `pip`.
 
-## **Installation**
+## Installation
 
 1. Make sure you have Python installed. You can check by running:
 
 ```bash
 python --version
-Python 3.13.1
-
-
-## **Install the required packages**
+# Example output:
+# Python 3.13.1
 pip install yfinance pandas numpy matplotlib
-## **Run the main Python script**
 python main.py
 
+---
 
+This version will **display correctly on GitHub**, with proper code blocks and headings.  
+
+If you want, I can also **add badges for Python version and pip installs** to make it look more professional.
