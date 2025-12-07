@@ -65,3 +65,41 @@ Investopedia
 5) Practical coding example — SMA crossover backtester (Python)
 
 This is a simple, self-contained example using yfinance to fetch historical OHLC data and pandas to run a vectorized backtest of a fast/slow simple moving average crossover. It demonstrates entry/exit rules, position sizing, fees, and prints performance summary.
+
+
+Notes about the example
+
+This is a learning example — it’s not production-ready. Real systems require robust handling of partial fills, intraday timing (market open vs close), realistic slippage models, tick-level data if you need HFT accuracy, and resilient error handling.
+
+Replace yfinance with your broker/exchange historical feed for more accurate testing. For live trading you’d connect to an API (e.g., IB, Alpaca, Binance/CCXT) and adapt order submission logic.
+
+For more advanced backtesting frameworks check Backtrader, zipline, vectorbt, or QuantConnect/Lean. 
+Algo Trading 101
++1
+
+6) Where to go next / recommended learning path
+
+Learn pandas/numpy and matplotlib for data manipulation and plotting.
+
+Implement simple strategies (SMA crossover, RSI-based) and backtest carefully (include fees & slippage).
+
+Move to a framework (Backtrader or vectorbt) for more realistic backtests and walk-forward testing. 
+Algo Trading 101
++1
+
+Study risk management (position sizing, drawdown limits) and build monitoring/alerts.
+
+If you plan live trading, start with paper trading or a sandbox to validate order/latency behavior.
+
+7) Sources / further reading (key refs I used)
+
+Investopedia — Algorithmic Trading overview. 
+Investopedia
+
+Backtrader docs (backtesting library). 
+backtrader.com
+
+QuantInsti — Mean reversion strategies and building blocks. 
+QuantInsti Blog
+
+Reuters — recent regulator actions (example: SEBI rules about traceability/retail algos).
